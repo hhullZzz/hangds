@@ -1,0 +1,8 @@
+{
+  "name": "hangds", // 必须和你Cloudflare上的Worker项目名一致
+  "compatibility_date": "2026-01-16", // 日期可以用当前日期
+  "assets": {
+    "directory": "./", // 表示部署仓库根目录下的所有静态文件（html/css/js等）
+    "main": "./index.html" // 指定入口HTML文件
+  }
+}
