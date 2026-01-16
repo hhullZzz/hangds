@@ -1,0 +1,62 @@
+; ============================================
+; 场景4：英文题目的考验
+; 时间：讲解进行到一半
+; ============================================
+
+changeBg:library_day.jpg;
+:图书馆的钟表滴答走着，时间缓慢流淌。;
+
+changeFigure:huang_focus.png -left;
+setAnimation:enter -target=fig-left -next;
+
+黄大师:"接下来看2010年的压轴题。这道......";
+
+:（他翻页，然后僵住了。手指无意识地蜷缩起来。）;
+
+setTextbox:hide;
+intro:Let S be a set of integers such that... -fontFamily='Courier New' -fontColor=#000066 -backgroundColor=rgba(240,240,255,0.9) -hold;
+setTextbox:on;
+
+{主角名字}:"我读给你听？";
+
+changeFigure:huang_nervous.png -left;
+setAnimation:shake -target=fig-left -duration=800 -next;
+
+黄大师（摇头，声音很轻）:"......我自己来。";
+
+:（他开始读，声音很轻，但每个单词都清晰。读到第三行时，他卡住了。）;
+
+黄大师:"......'influence'是什么意思？";
+
+{主角名字}:"影响。";
+
+黄大师:"哦。";
+
+:（他继续。但读到第五行时，又停下了。）;
+
+黄大师（犹豫）:"那个词......'influencial'？我拼错了吗？";
+
+{主角名字}:"是'influential'，有影响力的。";
+
+黄大师:"......嗯。";
+
+:（他的声音变得更轻了。你意识到——他在测试这个词。测试它会不会触发反应。）;
+
+:读完题干，他已经出了一层薄汗，但比预想的平静。;
+
+{主角名字}:"解出来了？";
+
+changeFigure:huang_normal.png -left;
+setAnimation:enter -target=fig-left -next;
+
+黄大师（点头）:"嗯。其实......知道意思后，很简单。";
+
+:（他说"很简单"时，声音里有种如释重负。）;
+
+; ============================================
+; 【第二次分支选择】
+; ============================================
+
+:他放下题集，摘下眼镜揉了揉眉心。你会：;
+
+choose:"我们先把题干翻译成中文写在旁边":choices/chapter2_choice2_A.txt|递过一颗薄荷糖："休息一下":choices/chapter2_choice2_B.txt|"你读得很准，发音很好听":choices/chapter2_choice2_C.txt;

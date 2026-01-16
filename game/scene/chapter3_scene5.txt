@@ -1,0 +1,29 @@
+; ============================================
+; 场景5：周一教室 · 草稿纸上的"错题"
+; ============================================
+
+changeBg:classroom_day.jpg;
+:数学课上，老师在讲台上讲解习题。;
+
+changeFigure:huang_focus.png;
+:黄大师在草稿纸上同步验算。;
+
+intro:你余光看见，他写着写着，笔尖开始画：|1. 直角坐标系|2. 点：(0,0),(1,2),(2,3),(3,3)|3. 平滑曲线连接——单调递增函数|4. 标注：f(x)|5. 定义域 x∈[0,+∞)|6. 另一条曲线 g(x)，与 f(x) 平行略低|7. 两条曲线之间画了双向箭头|8. 箭头旁写：距离 d ≈ 1.5 （单位？） -fontSize=small -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500 -hold;
+
+setTextbox:on;
+:数学老师正好走到你们这排。;
+
+老师:黄大师，你在画什么函数？;
+changeFigure:huang_nervous.png;
+黄大师:（迅速用手盖住草稿纸）……练习画图。;
+
+:老师点头走开。下课后，你轻声问：;
+
+{主角名字}:那个 d≈1.5 是什么距离？;
+changeFigure:none -left;
+changeFigure:none -right;
+changeFigure:huang_sad.png;
+黄大师:（低头整理书本）……座位间距。我们的桌子，中心距离大约是1.5米。;
+:说完这句，他整节课没再抬头。但你能看见，他耳根红了一整节。;
+
+changeScene:chapter3_scene6.txt;

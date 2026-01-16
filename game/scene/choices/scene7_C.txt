@@ -1,0 +1,31 @@
+; ============================================
+; 分支C：什么也不做，等他自己回来（隐藏路线）
+; ============================================
+
+; 保持教室背景
+changeBg:classroom_day.jpg;
+{主角名字}选择留在教室。;
+
+十分钟后，他回来了。脸色苍白，但恢复了平静。;
+
+; 显示普通但苍白的立绘
+changeFigure:huang_normal.png -right;
+setAnimation:enter-from-right -target=fig-right -next;
+
+那之后的一整天，他没再和{主角名字}说一句话。;
+
+放学时，{主角名字}发现他桌上留了一张纸条：;
+"抱歉。";
+"让你看到难堪的样子。";
+
+setAnimation:exit -target=fig-right -next;
+
+setVar:黄大师好感度={黄大师好感度}-2;
+setVar:选择记录=不干预;
+
+未点亮任何倾向;
+（{主角名字}选择了保持距离）;
+（这个选择会导致后续剧情推进缓慢，但可能触发"慢热型"特殊结局）;
+
+changeFigure:none;
+changeScene:chapter1_scene8.txt;

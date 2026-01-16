@@ -1,0 +1,35 @@
+; ============================================
+; 场景1：早自习 · 转学生到来
+; ============================================
+
+changeBg:classroom_day.jpg;
+
+:周一早晨 7:50 · 高二（三）班教室;
+:晨读声、翻书声、粉笔擦过黑板声;
+
+班主任:（拍手示意安静）"同学们，今天有位新同学加入我们。黄大师，来自光华一中。";
+
+changeFigure:huang_normal.png;
+setAnimation:enter -target=fig-center -next;
+
+:一个身形清瘦的男生走进来。他站上讲台时，右手无意识地握紧了书包带。;
+
+miniAvatar:mini/mini_huang_normal.png;
+黄大师:（声音很轻）"......我叫黄大师。" -1月10日 下午1点26分(1).mp3;
+miniAvatar:none;
+
+:说完这句就沉默了，全班安静了五秒。;
+
+changeFigure:none;
+; === 修改这里：使用变量插值 ===
+班主任:（打圆场）"黄同学数学很好，大家多交流。你就坐......{主角名字}旁边吧，靠窗那个空位。";
+
+changeFigure:huang_normal.png -right;
+setAnimation:enter-from-right -target=fig-right -next;
+miniAvatar:mini/mini_huang_normal.png;
+
+:他向你走来。你注意到他的书包侧袋插着一本深蓝色封面的《数学奥林匹克高级教程》，书脊已经磨损。而英语课本是崭新的，塑封还没拆。;
+
+miniAvatar:none;
+changeFigure:none;
+changeScene:chapter1_scene2.txt;

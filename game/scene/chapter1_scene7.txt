@@ -1,0 +1,40 @@
+; ============================================
+; 场景7：次日 · 转折点
+; 时间：周二英语课 10:20
+; ============================================
+
+changeBg:classroom_day.jpg;
+周二英语课 10：20;
+又是英语听写，这次是句子;
+
+英语老师:"第一句：Mathematics is the language of the universe.（数学是宇宙的语言。）";
+
+; 显示黄大师听到数学句子时的反应
+changeFigure:huang_normal.png -right;
+setAnimation:enter-from-right -target=fig-right -next;
+
+{主角名字}写下句子。余光看见黄大师愣住了。他盯着纸，笔尖颤抖。;
+这个句子本该是他最熟悉的------数学、语言、宇宙，都是他世界里的词。;
+
+英语老师:"第二句：Don't be afraid of making mistakes.（不要害怕犯错。）";
+
+; 切换为紧张表情 - 听到这句话时反应强烈
+changeFigure:huang_nervous.png -right;
+setAnimation:shake -target=fig-right -duration=800 -next;
+
+他猛地站起来，椅子发出刺耳的摩擦声。;
+全班安静，所有人都看着他。;
+
+黄大师:（声音沙哑）"......对不起。我去一下洗手间。";
+
+他几乎是跑着离开教室的。{主角名字}看到他离座时，手指在剧烈颤抖。;
+
+; 快速退出动画
+setAnimation:exit -target=fig-right -duration=300 -next;
+
+【第四次关键选择】;
+
+五分钟后，他还没回来。;
+{主角名字}会怎么做？;
+
+choose:向老师举手："我去看看他":choices/scene7_A.txt|等下课后再去找他:choices/scene7_B.txt|什么也不做，等他自己回来:choices/scene7_C.txt;

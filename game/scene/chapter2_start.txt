@@ -1,0 +1,15 @@
+; ============================================
+; 第二章：报名表底部的秘密
+; ============================================
+
+changeFigure:none -right;
+changeFigure:none -left;
+changeFigure:none;
+intro:第二章|报名表底部的秘密|————————|恐惧不是深渊，|而是回音。 -hold;
+
+changeBg:classroom_morning.jpg;
+:晨光透过窗户洒进教室，早读前的嘈杂隐约可闻。;
+
+:点击屏幕继续......;
+
+changeScene:chapter2_scene1.txt;

@@ -1,0 +1,9 @@
+Game_name:huang;
+Game_key:135c3d1a8f8550f;
+Title_img:WebGAL_New_Enter_Image.webp;
+Title_bgm:s_Title.mp3;
+Textbox_theme:imss;
+Enable_Appreciation:true;
+Package_name:huang.ii;
+Version_name:5.2.0;
+Version_code:520;

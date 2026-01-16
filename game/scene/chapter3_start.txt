@@ -1,0 +1,20 @@
+; ============================================
+; 第三章：竞赛日 · 解题与分心
+; ============================================
+
+changeFigure:none;
+changeFigure:none -left;
+changeFigure:none -right;
+changeBg:school_night.jpg;
+:竞赛日终于来临。清晨的阳光透过窗户，洒在安静的校园里。;
+
+:这是你和黄大师共同备考后的第一次正式竞赛。;
+
+changeFigure:huang_normal.png;
+黄大师:（站在教室门口）准备好了吗？;
+
+{主角名字}:嗯。走吧。;
+
+:你们并肩走向考点，脚步声在走廊里回响。;
+
+changeScene:chapter3_scene1.txt;

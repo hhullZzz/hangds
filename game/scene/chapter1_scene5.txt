@@ -1,0 +1,27 @@
+; ============================================
+; 场景5：午休 · 发现的秘密
+; 时间：中午12:30
+; ============================================
+
+changeBg:classroom_day.jpg;
+中午12：30;
+教室（大部分同学去食堂了）;
+远处操场传来的打球声、风扇转动声;
+
+; 显示黄大师趴着休息的立绘（普通状态）
+changeFigure:huang_normal.png -right;
+setAnimation:enter-from-right -target=fig-right -next;
+
+他趴在桌上休息。书包半开着，露出一本笔记本。;
+
+笔记本封面写着"数学随笔"，但内页一角露出英文印刷体------那是一份英文数学期刊的复印件。;
+{主角名字}隐约看到标题：;
+"On the Solution of Polynomial Equations of Higher Degrees";
+（关于高次多项式方程的解法）;
+一个能阅读英文数学论文的人，为什么会拼不出高中单词？;
+
+【第二次分支选择】;
+
+这时，他动了一下，似乎要醒了。你会：;
+
+choose:立刻移开视线，假装看窗外:choices/scene5_A.txt|轻声问："你也看这个期刊？":choices/scene5_B.txt|在他醒来前，放一颗薄荷糖在他桌角:choices/scene5_C.txt;

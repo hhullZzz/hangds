@@ -1,0 +1,46 @@
+; ============================================
+; 场景6：深夜短信 · 梦魇
+; 时间：当晚 23:50
+; ============================================
+
+changeBg:bedroom_night.jpg;
+:时间：当晚 23:50;
+:背景：你即将入睡时，手机屏幕的光在黑暗中格外刺眼。;
+
+:手机震动，屏幕亮起。;
+
+setTextbox:hide;
+intro:未知号码：|"睡了吗？" -fontColor=#4A90E2 -backgroundColor=rgba(255,255,255,0.95) -hold;
+setTextbox:on;
+
+{主角名字}:"还没。怎么了？";
+
+:（屏幕上显示"对方正在输入......"，光标闪烁，持续了两分钟。）;
+
+setTextbox:hide;
+intro:黄大师："我做噩梦了。|梦到又在那个台上。|这次台下坐着你。" -fontColor=#4A90E2 -backgroundColor=rgba(255,255,255,0.95) -hold;
+setTextbox:on;
+
+{主角名字}:"然后呢？";
+
+setTextbox:hide;
+intro:黄大师："评委让我解释'influence'的数学含义。|我明明知道......|但就是说不出来。|然后你也在笑。" -fontColor=#4A90E2 -backgroundColor=rgba(255,255,255,0.95) -hold;
+setTextbox:on;
+
+{主角名字}:"我不会笑。";
+
+setTextbox:hide;
+intro:黄大师："可梦里的你笑了。|指着我说：'连这个单词都拼不对，还学什么数学。'" -fontColor=#4A90E2 -backgroundColor=rgba(255,255,255,0.95) -hold;
+setTextbox:on;
+
+:（连梦境都精准地抓住了要害。）;
+
+; ============================================
+; 【第四次分支选择】
+; ============================================
+
+:手机屏幕的光映着你的脸。凌晨的寂静中，只有时钟的滴答声。;
+
+:你会怎么回复？;
+
+choose:"那是梦，我是真人。需要我打电话给你吗？":choices/chapter2_choice4_A.txt|"告诉我你在哪里，我现在过去。":choices/chapter2_choice4_B.txt|"那你听听我的声音。我保证不笑。":choices/chapter2_choice4_C.txt;
