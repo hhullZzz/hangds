@@ -1,0 +1,48 @@
+; ============================================
+; 场景3：课间 · 第一次接触
+; 时间：数学课后 9:00
+; ============================================
+
+changeBg:classroom_day.jpg;
+
+:数学课后 9:00;
+:课间喧闹声、走廊脚步声;
+
+; 显示黄大师整理笔记（普通表情）
+changeFigure:huang_normal.png -right;
+setAnimation:enter-from-right -target=fig-right -next;
+miniAvatar:mini/mini_huang_normal.png;
+
+:他正整理笔记。{主角名字}注意到他的草稿纸------正面是刚才的三种解法，背面......;
+
+; 特写草稿纸内容 - 暂时关闭小头像
+miniAvatar:none;
+:草稿纸背面上，有几行无意识写下的英文花体字：;
+:"The limit does not exist.";
+:"Proof by contradiction.";
+:"Q.E.D.";
+:字迹流畅优美，与他在黑板上工整的板书完全不同。这让{主角名字}感到困惑。;
+
+【第一次分支选择】;
+
+; 重新显示黄大师小头像（因为他还在场景中）
+changeFigure:huang_normal.png -right;
+miniAvatar:mini/mini_huang_normal.png;
+
+:这时，他的笔滚落到{主角名字}脚边。;
+
+; 显示选择提示（带小头像）
+:（黄大师似乎没注意到笔掉了，还在专注地看着草稿纸）;
+miniAvatar:mini/mini_huang_normal.png;
+
+:你会怎么做？;
+
+; ============================================
+; 使用标准分支选择语法
+; choose:选项文本:目标文件|选项文本:目标文件;
+; ============================================
+
+choose:捡起笔，直接递还:choices/scene3_A.txt|捡起笔，轻轻放在他桌角:choices/scene3_B.txt|捡起笔，顺便问一句："你的字很漂亮。":choices/scene3_C.txt;
+
+; 注意：选择后会自动跳转到对应的目标文件
+; 所以这里不需要额外的changeScene语句

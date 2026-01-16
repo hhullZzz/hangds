@@ -1,0 +1,33 @@
+; ============================================
+; 场景1：次日晨 · 课桌上的报名表
+; 时间：周三早晨 7:40
+; ============================================
+
+changeBg:classroom_morning.jpg;
+:周三早晨 7:40 · 教室座位;
+:晨读前的嘈杂声从走廊传来，椅子拖动声断断续续。;
+
+changeFigure:huang_normal.png -left;
+setAnimation:enter-from-left -target=fig-left -next;
+miniAvatar:mini/mini_huang_normal.png;
+
+:（你到教室时，黄大师已经在了。他桌上放着一张数学联赛报名表，表格摊开，但笔放在一旁。）;
+
+setTextbox:hide;
+intro:报名表底部的一行加粗小字：|"注意事项：复赛试题含英文材料阅读"|"建议具备基础英语阅读能力" -backgroundColor=rgba(255,255,255,0.95) -fontColor=#CC0000 -fontSize=small -hold;
+setTextbox:on;
+
+:（他盯着那行字，右手无意识地转着笔。笔在他指尖转了三圈，掉了。）;
+
+{主角名字}（放下书包）:"早上好。";
+
+changeFigure:huang_nervous.png -left;
+setAnimation:shake -target=fig-left -duration=500 -next;
+
+黄大师（迅速把报名表翻到背面）:"......早。";
+
+:（他的动作太急，表格边缘被撕破了一点。）;
+
+miniAvatar:none;
+changeFigure:none;
+changeScene:chapter2_scene2.txt;
